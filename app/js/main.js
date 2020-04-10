@@ -1,5 +1,15 @@
 $(function(){
 
+  $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 1000,
+      from: 0,
+      to: 600,
+      prefix: "$"
+  });
+
+
   $(".rate-star").rateYo({
     rating: 5,
     starWidth: "12px",
@@ -13,6 +23,8 @@ $(function(){
     slidesToScroll:4
   });
 
-  var mixer = mixitup('.product__inner-box');
+  
 
 });
+
+var mixer = mixitup('.product__inner-box');
